@@ -1,0 +1,10 @@
+<%= @trip.title %>
+<br/>
+<%= @trip.description %>
+<br/>
+<video controls>
+  <source src="http://localhost:3000<%= @trip.vid_location %>" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<br/>
+<%= link_to 'Back', trips_path %>

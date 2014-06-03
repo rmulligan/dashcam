@@ -1,0 +1,10 @@
+%h1
+  Listing trips
+
+%table
+  %tbody
+    - @trips.each do |trip|
+      %tr
+        = link_to(in_pacific(trip.start_time), trip)
+%br
+
